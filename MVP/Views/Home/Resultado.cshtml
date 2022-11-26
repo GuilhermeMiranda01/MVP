@@ -1,0 +1,32 @@
+﻿@model MVP.Entidades.SituacaoUsuario
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h4>Consulta por CPF</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                @if (Model.TemProcesso == true)
+                {
+                    <p>Esta pessoa TEM processo</p>
+                }
+                else if (Model.TemProcesso == false)
+                {
+                    <p>Esta pessoa NÃO TEM processo</p>
+                }
+
+
+        <div class="form-group">
+            @Html.ActionLink("Voltar", "Index", "Home", null, new { @class="btn btn-primary "})
+
+        </div>
+        </form>
+    </div>
+</div>
+

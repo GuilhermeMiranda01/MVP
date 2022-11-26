@@ -1,0 +1,27 @@
+[
+  {
+    "Id": 1,
+    "CPF": "123456789",
+    "TemProcesso": true
+  },
+  {
+    "Id": 2,
+    "CPF": "987654321",
+    "TemProcesso": false
+  },
+  {
+    "Id": 1,
+    "CPF": "1234",
+    "TemProcesso": true
+  },
+  {
+    "Id": 1,
+    "CPF": "4321",
+    "TemProcesso": false
+  },
+  {
+    "Id": 1,
+    "CPF": "555",
+    "TemProcesso": false
+  }
+]
